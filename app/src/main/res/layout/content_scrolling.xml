@@ -15,11 +15,19 @@
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_padding_min"
+            android:layout_marginStart="@dimen/common_padding_min"
+            android:layout_marginEnd="@dimen/common_padding_min"
+            android:clickable="true"
+            android:focusable="true">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/common_pading_default"
+                android:paddingStart="@dimen/common_pading_default"
+                android:paddingEnd="@dimen/common_pading_default">
 
                 <ImageView
                     android:layout_width="@dimen/card_dimen_size"
