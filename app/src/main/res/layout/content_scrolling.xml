@@ -30,11 +30,33 @@
                 android:paddingEnd="@dimen/common_pading_default">
 
                 <ImageView
+                    android:id="@+id/imgCard"
                     android:layout_width="@dimen/card_dimen_size"
                     android:layout_height="@dimen/card_dimen_size"
                     android:src="@mipmap/ic_launcher"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:importantForAccessibility="no"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnBuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_padding_min"
+                    android:text="@string/card_btn_buy"
+                    app:icon="@drawable/ic_shopping_bag"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/imgCard"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSkip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/common_padding_min"
+                    android:text="@string/card_btn_skip"
+                    app:layout_constraintEnd_toStartOf="@id/btnBuy"
+                    app:layout_constraintTop_toTopOf="@id/btnBuy"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"/>
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
